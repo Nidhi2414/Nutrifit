@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri Fit | Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="scrollable-body">
+
+    <header class="dashboard-header">
+        <div class="header-container">
+            <div class="logo1">
+                <img src="Group 1.png" alt="Nutri Fit" style="margin-left: 50px;">
+            </div>
+            <nav class="nav-links" style="margin-left: -90px;">
+                <a href="home.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="popular.html">Popular Meals</a>
+                <a href="nutricalc.html">Nutri counts</a>
+                <a href="tips.html">Tips</a>
+            </nav>
+            <div class="search-icon"><img src="ic_round-search.png" height="20px" width="auto" style="margin-top: -19px;"></div>
+        </div>
+    </header>
+
+    <main class="menu-container">
+        <span class="category-title" style="margin-left: 50px;">Overview of “ON A BUDGET “</span>
+
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 161.png" alt="South Indian Platter">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('The South Indian Platter', 130, 'Rectangle161.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">The south indian platter</span>
+                        <span class="item-price">₹ 130</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 168.png" alt="Poori Sagu">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Poori Sagu', 130, 'Rectangle 168.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">Poori Sagu</span>
+                        <span class="item-price">₹ 150</span>
+                    </div>
+                    <div class="stars">★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 162.png" alt="Lemon Rice">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Lemon Rice', 130, 'Rectangle 162.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">Lemon Rice</span>
+                        <span class="item-price">₹ 95</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 164.png" alt="Paneer Roll">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Paneer Roll', 130, 'Rectangle 164.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">VEG-Paneer Roll</span>
+                        <span class="item-price">₹ 150</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 169.png" alt="masala dosa">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Masala Dosa', 130, 'Rectangle 169.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">Masala Dosa</span>
+                        <span class="item-price">₹ 130</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 165.png" alt="mushroom pulao">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Mushroom pulao', 130, 'Rectangle 165.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">Mushroom Pulao</span>
+                        <span class="item-price">₹ 100</span>
+                    </div>
+                    <div class="stars">★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 166.png" alt="paddu">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Paddu', 130, 'Rectangle 166.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">Vegies mix-Paddu</span>
+                        <span class="item-price">₹ 90</span>
+                    </div>
+                    <div class="stars">★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 170.png" alt="raagi ball">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Raagi ball', 130, 'Rectangle 170.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">Raagi ball -Desi</span>
+                        <span class="item-price">₹ 200</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="image-wrapper">
+                    <img src="Rectangle 167.png" alt="masala rice">
+                    <span class="veg-icon">●</span>
+                    <button class="add-btn" onclick="addToCart('Masala Rice', 130, 'Rectangle 167.jpg', this)">ADD</button>
+                </div>
+                <div class="item-info">
+                    <div class="name-price">
+                        <span class="item-name">curd masala rice</span>
+                        <span class="item-price">₹ 90</span>
+                    </div>
+                    <div class="stars">★★★★</div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

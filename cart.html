@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri Fit | Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="scrollable-body">
+
+    <header class="dashboard-header">
+        <div class="header-container">
+            <div class="logo1"><img src="Group 1.png" alt="Nutri Fit" style="margin-left: 45px;"></div>
+            <nav class="nav-links" style="margin-left: -90px; margin-top: -10px;">
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="popular.html">Popular Meals</a>
+                <a href="nutri-counts.html">Nutri counts</a>
+                <a href="tips.html">Tips</a>
+            </nav>
+            <div class="search-icon"><img src="ic_round-search.png" height="20px" width="auto" style="margin-top: -19px;"></div>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <h1 class="cart-title">Your Cart</h1>
+        <div class="green-underline"></div>
+
+        <div class="cart-items">
+            <div class="cart-item-card">
+                <img src="Rectangle 161.png" alt="South Indian Platter" class="item-thumb">
+                <div class="item-details">
+                    <span class="item-name">The south indian platter</span>
+                    <span class="item-price">₹130</span>
+                </div>
+                <button class="delete-btn" onclick="removeItem()"><img src="basil_trash-solid.png" height="20px"></button>
+            </div>
+
+            <div class="cart-item-card">
+                <img src="Rectangle 169.png" alt="Masal Dose" class="item-thumb">
+                <div class="item-details">
+                    <span class="item-name">Masal Dose</span>
+                    <span class="item-price">₹130</span>
+                </div>
+                <button class="delete-btn"><img src="basil_trash-solid.png" height="20px"></button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="total-box">
+                <span class="total-label">Cart total</span>
+                <span class="total-amount" onclick="calculateTotal()"></span>
+            </div>
+            <button class="place-order-final" onclick="checkout()"  >Place Order</button>
+        </div>
+    </main>
+
+    <nav class="floating-bottom-nav">
+        <a href="home.html" class="nav-icon"><img src="material-symbols_home-rounded.png" style="height: 20px; width: auto;" > </a>
+        <a href="menu.html" class="nav-icon"><img src="carbon_collapse-categories.png" style="height: 20px; width: auto;" ></a>
+        <a href="#" class="nav-icon active-nav"><img src="mynaui_cart-solid.png" style="height: 20px; width: auto;" ></a>
+        <a href="help.html" class="nav-icon"><img src="mdi_chat-question-outline.png" style="height: 20px; width: auto;" ></a>
+        <a href="#" class="nav-icon"><img src="iconamoon_profile-fill.png" style="height: 20px; width: auto;" ></a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

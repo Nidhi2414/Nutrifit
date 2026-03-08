@@ -1,0 +1,1424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:#F6F0E1E8; /* Cream background */
+    overflow: hidden; /* Prevents scrolling on the login screen */
+}
+/* Ensure the body takes up the full screen and centers content */
+.login-page {
+    margin: 0;
+    padding: 0;
+    background-color:#F6F0E1E8; /* The cream background from your image */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    height: 100vh;           /* Full viewport height */
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for the green box and the image */
+.login-container {
+    display: flex;
+    align-items: center; 
+}
+
+/* The Green Login Box */
+.login-box {
+    background-color: #8fa86b; /* The exact sage green */
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.login-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f1e8;
+    color: #333;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f1e8;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.continue-text {
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* DNA Image Styling */
+.dna-graphic img {
+    height: 500px; /* Adjust based on your image size */
+    width: auto;
+    display: block;
+}
+.hh{
+    top: auto;
+    margin: 0;
+    padding: 0;
+}
+.hh {
+    justify-content: space-around; /* Pushes logo left, nav-links right */
+    align-items: center;            /* Vertically centers everything */
+    padding: 40px 5%;               /* 5% side padding keeps it off the very edge */ /* Sage green accent line */
+    position: sticky;               /* Keeps it at the top while scrolling */
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    position: absolute;
+    top: -310px;
+    left: -185px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.scrollable-body {
+    background-color: #f4f1e8;
+    overflow-y: auto; /* ENABLES SCROLLING */
+    min-height: 100vh;
+}
+
+/* NAVBAR - Centered Logo & Sticky */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #f4f1e8;
+    z-index: 1000;
+    border-bottom: 10px solid #45692D78;
+    height: 80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.login-nav-btn {
+    background: #8fa86b;
+    color: black !important;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+
+/* HERO SECTION - Centered Content */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 5%;
+}
+
+.hero-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px rgba(143, 168, 107, 0.1);
+    max-width: 500px;
+}
+
+.green-divider {
+    width: 60px;
+    height: 4px;
+    background: #8fa86b;
+    margin: 15px 0;
+}
+
+/* GOAL SECTION - Overlapping Elements */
+.goal-section {
+    padding: 60px 10%;
+}
+
+.goal-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.goal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.goal-logo-circle {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.tomato-float {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 120px;
+}
+
+/* SERVICES - Icons centered with text below */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.service-box {
+    background: #e6ead9;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 160px;
+    display: flex;
+    flex-direction: column; /* FORCES WORDS TO COME DOWN */
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.service-box img {
+    width: 50px;
+    margin-bottom: 15px; /* Pushes text down */
+}
+
+/* FOOTER */
+.footer-card {
+    background: #e6ead9;
+    margin: 40px 10%;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.info-strip {
+    background: #8fa86b;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 13px;
+}
+.logo1{
+    display: flex;
+    align-items: center;
+    margin-left: -60px;
+}
+.logo1 img{
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+.nav-links{
+    margin-left: auto;
+    display:flex;
+}
+:root {
+    --sage-green: #8fa86b;
+    --cream-bg: #f4f1e8;
+    --dark-text: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream-bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-text);
+    padding-bottom: 100px; /* Space for floating nav */
+}
+
+/* Top Navigation */
+.dashboard-header {
+    background-color: var(--sage-green);
+    border-radius:25px;
+    padding: 10px 0;
+    margin: 10px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+    font-size: 0.9rem;
+}
+
+.nav-links a.active {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-color: var(--sage-green);
+    margin: 25px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    color: white;
+    height: 250px;
+    width:auto;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 25px;
+    flex: 1;
+}
+.side-accent-box {
+    width: 60px; /* Adjust width as per design */
+    background-color: #8fa86b;
+    border-radius: 15px;
+    /* Adding the shadow effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    gap: 30px;
+}
+
+.hero-italics {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.order-now-btn {
+    background-color:#AEEF89CC;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 600px;
+}
+
+/* Section Headings */
+.section-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin: 20px 25px;
+}
+
+/* Plans Container */
+.plans-container {
+    background-color: var(--sage-green);
+    margin: 0 25px;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    height: 275px;
+    width: auto;
+}
+
+.plan-card {
+    text-align: center;
+    color: white;
+    font-size: 0.85rem;
+}
+.plan-card img {
+    width: auto;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* Popular Meals Grid */
+.meals-grid {
+    display: flex;
+    gap: 25px;
+    padding: 0 25px;
+}
+
+.meal-item {
+    flex: 1;
+    height: 200px;
+    border-radius: 25px;
+    border: 6px solid var(--sage-green);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.meal-tag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 230, 100, 0.9);
+    padding: 8px 18px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+/* Floating Bottom Nav */
+.floating-bottom-nav {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: var(--sage-green);
+    height: 65px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.nav-icon {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.active-nav {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Category Title */
+.category-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 40px 5%;
+    color: #333;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row as per image */
+    gap: 30px;
+    padding: 0 5% 50px 5%;
+    margin-top: -30px;
+}
+
+.menu-card {
+    background-color: var(--sage-green);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ADD Button inside Image */
+.add-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* Green Veg Icon */
+.veg-icon {
+    position: absolute;
+    bottom: 12px;
+    right: 70px; /* Positioned next to ADD button */
+    color: #2e7d32;
+    background: white;
+    border: 1px solid #2e7d32;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+/* Item Labels */
+.item-info {
+    margin-top: 10px;
+    color: black;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.item-name {
+    text-transform: capitalize;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+.stars {
+    color: #fbc02d; /* Yellow gold for stars */
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+/* Detail Container */
+.detail-container {
+    padding: 30px 5%;
+    background-color: #719440C2;
+    height: 730px;
+    width: 1450px;
+    margin-left: 40px;
+}
+
+/* Top Card Layout */
+.product-main-card {
+    background-color: #FFFFFFB8;
+    border-radius: 20px;
+    display: flex;
+    padding: 40px;
+    margin-bottom: 25px;
+    gap: 30px;
+    align-items: center;
+}
+
+.product-description {
+    flex: 1.5;
+}
+
+.item-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.description-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.price-line {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Bottom Action Card */
+.action-bar-card {
+    background-color: #FFFFFFB8;
+    border-radius: 20px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Rating Badge */
+.rating-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #71944085;
+    padding: 10px 1%;
+    height: 120px;
+    width: 270px;
+}
+
+.rating-badge {
+    background-color: #c4d4ae; /* Slightly lighter shade for the badge */
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.star {
+    color: #fbc02d;
+}
+
+.review-count {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 40px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s;
+    background-color: #45692DBF;
+
+}
+
+.btn-primary {
+    background-color:#45692DBF ;
+}
+
+.btn-secondary {
+    background-color: #45692DBF;
+    opacity: 0.9;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    filter: brightness(1.1);
+}
+.category-title{
+    background-color:#45692D;
+    color: white;
+    padding: 10px 40px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    /* THE SLANT EFFECT */
+    transform: skew(-20deg); /* Skews the box to create slanted edges */
+    
+    /* Fixing the text so it doesn't look slanted too */
+    margin-left: 20px; 
+}
+/* Nutri Container */
+.nutri-container {
+    padding: 40px 5%;
+}
+
+/* Hero Section */
+.nutri-hero {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.meal-preview-card {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.meal-preview-card img {
+    width: 350px;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Macros and Slanted Label */
+.macros-section {
+    flex: 1;
+}
+
+.slanted-label {
+    background-color: var(--sage-green);
+    color: white;
+    padding: 10px 40px;
+    display: inline-block;
+    transform: skew(-20deg);
+    margin-bottom: 30px;
+}
+
+.slanted-label span {
+    display: block;
+    transform: skew(20deg);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.macro-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.macro-box {
+    background-color: var(--sage-green);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.macro-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.macro-val {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.green-divider-line {
+    height: 8px;
+    background-color: var(--sage-green);
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Benefits Section */
+.benefits-row {
+    display: flex;
+    gap: 25px;
+}
+
+.benefit-card {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.benefit-card h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 2px solid var(--sage-green);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.benefit-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.benefit-card li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+:root {
+    --sage-green: #8fa86b;
+    --cream-bg: #f4f1e8;
+    --card-bg: #ede0cf; /* Slightly darker cream for cards */
+}
+
+body {
+    background-color: var(--cream-bg);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Filter Chips */
+.filter-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 0;
+}
+
+.filter-chip {
+    background-color: #b4c79b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.active-filter {
+    background-color: var(--sage-green);
+    border: 2px solid #333;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 8%;
+}
+
+.tip-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Individual Tip Card */
+.tip-card {
+    background-color: var(--card-bg);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0; /* Images are flush in your design */
+    overflow: hidden;
+    height: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tip-text {
+    padding: 20px;
+    flex: 1;
+}
+
+.tip-text h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.tip-text p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.tip-card img {
+    width: 140px;
+    height: 100%;
+    object-fit: cover;
+}
+.help-main { padding: 30px 5%; }
+
+/* Status Bar */
+.help-header { margin-bottom: 20px; }
+.status-pill {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.expert-tag, .online-dot {
+    background: #b4c79b;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Chat Layout */
+.chat-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.chat-window {
+    flex: 3;
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    border: 2px solid var(--sage-green);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages { flex: 1; }
+
+/* Message Bubbles */
+.msg-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.msg-row.user { justify-content: flex-end; }
+
+.bubble {
+    padding: 15px 20px;
+    border-radius: 20px;
+    max-width: 70%;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+.bot .bubble { background-color: var(--bubble-bg); border-bottom-left-radius: 2px; }
+.user .bubble { background-color: var(--sage-green); color: white; border-bottom-right-radius: 2px; }
+
+.chat-avatar { width: 50px; height: 40px; border-radius: 50%; }
+
+/* Input Bar */
+.input-bar {
+    background: white;
+    border: 2px solid #333;
+    border-radius: 30px;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+}
+.input-bar input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.send-btn {
+    background: var(--sage-green);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Side Panel */
+.popular-questions {
+    flex: 1;
+    background: #b4c79b;
+    border-radius: 20px;
+    padding: 20px;
+}
+.popular-questions ul { list-style: none; padding: 0; }
+.popular-questions li {
+    background: #fdf6e4;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Quick Action Buttons */
+.quick-filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.quick-filters button {
+    background: #AEEF89CC;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+   
+}
+.cart-container {
+    padding: 40px 10%;
+}
+
+.cart-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.green-underline {
+    height: 6px;
+    background-color: var(--sage-green);
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+/* Item Cards */
+.cart-item-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.item-thumb {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-right: 20px;
+}
+
+.delete-btn {
+    background-color:#8fa86b ;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Summary Section */
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Pushes everything to the right */
+    margin-top: 30px;
+}
+
+.total-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    gap: 100px;
+    margin-bottom: 15px;
+}
+
+.total-label { font-weight: 600; }
+.total-amount {
+    background-color: var(--light-green);
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.place-order-final {
+    background-color: #c4d4ae; /* Matching the light button in your design */
+    border: 1px solid #888;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.header-bar {
+    background-color:#00000040;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+.promo-banner {
+    background-color: #e1e9d5;
+    text-align: center;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #4f6d3d;
+}
+
+.delivery-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.continue-btn, .place-order-btn {
+    background-color: #b4c79b;
+    border: 1px solid #888;
+    padding: 10px 40px;
+    border-radius: 20px;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Container for the whole track */
+.progress-track-container {
+    display: flex;
+    align-items: flex-start; /* Aligns circles to the top */
+    justify-content: center;
+    margin: 30px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Individual step group (Circle + Label) */
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; /* Keeps circles above the line */
+    width: 80px;
+}
+
+/* The Number Circle */
+.step-circle {
+    width: 32px;
+    height: 32px; /* Default inactive cream */
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Label below the circle */
+.step-text {
+    font-size: 12px;
+    color:black;
+    font-weight: 500;
+}
+
+/* The Connecting Line */
+.step-connector {
+    height: 2px;
+    background-color: #ccc;
+    width: 80px; /* Length of the line between steps */
+    margin-top: 16px; /* Aligns line to the vertical center of circles */
+    margin-left: -20px; /* Pulls line slightly behind first circle */
+    margin-right: -20px; /* Pulls line slightly behind second circle */
+    z-index: 1;
+}
+
+/* ACTIVE STATE: When the step is current */
+.progress-step.active .step-circle {
+    background-color: #333;
+    color: #fff;
+}
+
+.progress-step.active .step-text {
+    color: #333;
+    font-weight: bold;
+}
+
+/* COMPLETED STATE: For the checkmark logic in JS */
+.progress-step.completed .step-circle {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Active Line State */
+.step-connector.active {
+    background-color: #333;
+}
+/* Success Page Background */
+.success-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('food-background.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.success-overlay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* The White Card */
+.confirmation-card {
+    background: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.check-icon {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.confirm-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Success Footer */
+.success-footer {
+    background: rgba(86, 81, 75, 0.95); /* Dark brownish-grey with transparency */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.home-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* The Main Container Box */
+.review-items-box {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/* The White Card */
+.review-item-card {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+    position: relative; /* Allows the button to be positioned relative to the card */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Image Styling */
+.item-img-container img {
+    width: 200px; /* Adjust based on your image size */
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text Details Styling */
+.item-info-details {
+    flex: 1;
+}
+
+.item-title {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.item-pricing {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.vendor-tag {
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.star-rating {
+    font-size: 1.2rem;
+}
+
+/* The Floating Continue Button */
+.continue-btn {
+    background-color: #b4c79b;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: -15px; /* Matches the "pushed out" look in your design */
+    bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Reset margins */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Times New Roman', serif; /* Matching the serif font in your image */
+}
+
+/* Background image for the top 60% of the page */
+.success-hero {
+    height: 75vh;
+    background-image: url('Group\ 9.png'); /* Replace with your image file name */
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The white box in the center */
+.confirmation-box {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.check-icon {
+    font-size: 50px;
+    color: #4CAF50; /* Green color */
+    margin-bottom: 10px;
+}
+
+.success-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+/* The dark footer section */
+.success-footer {
+    height: 25vh;
+    background-color: #5b5550; /* The dark brownish-grey from your image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.brand-title {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+.brand-tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
